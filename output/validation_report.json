@@ -1,0 +1,649 @@
+{
+  "summary": {
+    "total_ground_truth_records": 16,
+    "total_matched": 13,
+    "total_missed": 3,
+    "match_rate": 0.8125,
+    "overall_field_accuracy": 1.0,
+    "mean_followup_delta_weeks": 0.4769,
+    "field_accuracy": {
+      "iop_pre_mmhg": 1.0,
+      "iop_post_mmhg": 1.0,
+      "eye": 1.0,
+      "diagnosis": 1.0,
+      "num_meds_pre": 1.0,
+      "num_meds_post": 1.0
+    },
+    "field_pass_counts": {
+      "iop_pre_mmhg": 13,
+      "iop_post_mmhg": 13,
+      "eye": 13,
+      "diagnosis": 13,
+      "num_meds_pre": 13,
+      "num_meds_post": 13
+    }
+  },
+  "matched_records": [
+    {
+      "study_id": "case_report_01",
+      "eye": "OS",
+      "followup_weeks_expected": 4,
+      "followup_weeks_actual": 4.0,
+      "followup_delta_weeks": 0.0,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "28.0 (exp 28.0, diff 0.00)",
+          "expected": 28.0,
+          "actual": 28.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "19.0 (exp 19.0, diff 0.00)",
+          "expected": 19.0,
+          "actual": 19.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OS",
+          "expected": "OS",
+          "actual": "OS"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "POAG (exp POAG)",
+          "expected": "POAG",
+          "actual": "POAG"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "case_report_01",
+      "eye": "OS",
+      "followup_weeks_expected": 12,
+      "followup_weeks_actual": 13.0,
+      "followup_delta_weeks": 1.0,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "28.0 (exp 28.0, diff 0.00)",
+          "expected": 28.0,
+          "actual": 28.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "17.0 (exp 17.0, diff 0.00)",
+          "expected": 17.0,
+          "actual": 17.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OS",
+          "expected": "OS",
+          "actual": "OS"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "POAG (exp POAG)",
+          "expected": "POAG",
+          "actual": "POAG"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "1 (exp 1)",
+          "expected": 1,
+          "actual": "1"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "case_report_02",
+      "eye": "OD",
+      "followup_weeks_expected": 6,
+      "followup_weeks_actual": 6.0,
+      "followup_delta_weeks": 0.0,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "34.0 (exp 34.0, diff 0.00)",
+          "expected": 34.0,
+          "actual": 34.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "22.0 (exp 22.0, diff 0.00)",
+          "expected": 22.0,
+          "actual": 22.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OD",
+          "expected": "OD",
+          "actual": "OD"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "Pseudoexfoliation glaucoma (exp Pseudoexfoliation glaucoma)",
+          "expected": "Pseudoexfoliation glaucoma",
+          "actual": "Pseudoexfoliation glaucoma"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "3 (exp 3)",
+          "expected": 3,
+          "actual": "3"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "3 (exp 3)",
+          "expected": 3,
+          "actual": "3"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "case_report_03",
+      "eye": "OD",
+      "followup_weeks_expected": 8,
+      "followup_weeks_actual": 8.7,
+      "followup_delta_weeks": 0.7,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "26.0 (exp 26.0, diff 0.00)",
+          "expected": 26.0,
+          "actual": 26.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "18.0 (exp 18.0, diff 0.00)",
+          "expected": 18.0,
+          "actual": 18.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OD",
+          "expected": "OD",
+          "actual": "OD"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "POAG (exp POAG)",
+          "expected": "POAG",
+          "actual": "POAG"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "1 (exp 1)",
+          "expected": 1,
+          "actual": "1"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "case_report_03",
+      "eye": "OS",
+      "followup_weeks_expected": 8,
+      "followup_weeks_actual": 8.7,
+      "followup_delta_weeks": 0.7,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "24.0 (exp 24.0, diff 0.00)",
+          "expected": 24.0,
+          "actual": 24.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "16.0 (exp 16.0, diff 0.00)",
+          "expected": 16.0,
+          "actual": 16.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OS",
+          "expected": "OS",
+          "actual": "OS"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "POAG (exp POAG)",
+          "expected": "POAG",
+          "actual": "POAG"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "1 (exp 1)",
+          "expected": 1,
+          "actual": "1"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "case_report_04",
+      "eye": "OD",
+      "followup_weeks_expected": 12,
+      "followup_weeks_actual": 13.0,
+      "followup_delta_weeks": 1.0,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "16.0 (exp 16.0, diff 0.00)",
+          "expected": 16.0,
+          "actual": 16.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "13.0 (exp 13.0, diff 0.00)",
+          "expected": 13.0,
+          "actual": 13.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OD",
+          "expected": "OD",
+          "actual": "OD"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "Normal-tension glaucoma (exp Normal-tension glaucoma)",
+          "expected": "Normal-tension glaucoma",
+          "actual": "Normal-tension glaucoma"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "1 (exp 1)",
+          "expected": 1,
+          "actual": "1"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "case_report_04",
+      "eye": "OD",
+      "followup_weeks_expected": 26,
+      "followup_weeks_actual": 26.0,
+      "followup_delta_weeks": 0.0,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "16.0 (exp 16.0, diff 0.00)",
+          "expected": 16.0,
+          "actual": 16.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "12.0 (exp 12.0, diff 0.00)",
+          "expected": 12.0,
+          "actual": 12.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OD",
+          "expected": "OD",
+          "actual": "OD"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "Normal-tension glaucoma (exp Normal-tension glaucoma)",
+          "expected": "Normal-tension glaucoma",
+          "actual": "Normal-tension glaucoma"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "1 (exp 1)",
+          "expected": 1,
+          "actual": "1"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "case_report_05",
+      "eye": "OS",
+      "followup_weeks_expected": 1,
+      "followup_weeks_actual": 1.0,
+      "followup_delta_weeks": 0.0,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "38.0 (exp 38.0, diff 0.00)",
+          "expected": 38.0,
+          "actual": 38.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "37.0 (exp 37.0, diff 0.00)",
+          "expected": 37.0,
+          "actual": 37.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OS",
+          "expected": "OS",
+          "actual": "OS"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "Pigmentary glaucoma (exp Pigmentary glaucoma)",
+          "expected": "Pigmentary glaucoma",
+          "actual": "Pigmentary glaucoma"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "4 (exp 4)",
+          "expected": 4,
+          "actual": "4"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "4 (exp 4)",
+          "expected": 4,
+          "actual": "4"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "case_report_05",
+      "eye": "OS",
+      "followup_weeks_expected": 8,
+      "followup_weeks_actual": 8.7,
+      "followup_delta_weeks": 0.7,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "38.0 (exp 38.0, diff 0.00)",
+          "expected": 38.0,
+          "actual": 38.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "36.0 (exp 36.0, diff 0.00)",
+          "expected": 36.0,
+          "actual": 36.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OS",
+          "expected": "OS",
+          "actual": "OS"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "Pigmentary glaucoma (exp Pigmentary glaucoma)",
+          "expected": "Pigmentary glaucoma",
+          "actual": "Pigmentary glaucoma"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "4 (exp 4)",
+          "expected": 4,
+          "actual": "4"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "4 (exp 4)",
+          "expected": 4,
+          "actual": "4"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "clinical_note_01",
+      "eye": "OD",
+      "followup_weeks_expected": 6,
+      "followup_weeks_actual": 6.0,
+      "followup_delta_weeks": 0.0,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "24.0 (exp 24.0, diff 0.00)",
+          "expected": 24.0,
+          "actual": 24.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "16.0 (exp 16.0, diff 0.00)",
+          "expected": 16.0,
+          "actual": 16.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OD",
+          "expected": "OD",
+          "actual": "OD"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "POAG (exp POAG)",
+          "expected": "POAG",
+          "actual": "POAG"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "3 (exp 3)",
+          "expected": 3,
+          "actual": "3"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "clinical_note_02",
+      "eye": "OS",
+      "followup_weeks_expected": 4,
+      "followup_weeks_actual": 4.0,
+      "followup_delta_weeks": 0.0,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "22.0 (exp 22.0, diff 0.00)",
+          "expected": 22.0,
+          "actual": 22.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "15.0 (exp 15.0, diff 0.00)",
+          "expected": 15.0,
+          "actual": 15.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OS",
+          "expected": "OS",
+          "actual": "OS"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "POAG (exp POAG)",
+          "expected": "POAG",
+          "actual": "POAG"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "1 (exp 1)",
+          "expected": 1,
+          "actual": "1"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "clinical_note_02",
+      "eye": "OS",
+      "followup_weeks_expected": 16,
+      "followup_weeks_actual": 17.4,
+      "followup_delta_weeks": 1.4,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "22.0 (exp 22.0, diff 0.00)",
+          "expected": 22.0,
+          "actual": 22.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "14.0 (exp 14.0, diff 0.00)",
+          "expected": 14.0,
+          "actual": 14.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OS",
+          "expected": "OS",
+          "actual": "OS"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "POAG (exp POAG)",
+          "expected": "POAG",
+          "actual": "POAG"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "1 (exp 1)",
+          "expected": 1,
+          "actual": "1"
+        }
+      },
+      "overall_pass": true
+    },
+    {
+      "study_id": "clinical_note_03",
+      "eye": "OD",
+      "followup_weeks_expected": 8,
+      "followup_weeks_actual": 8.7,
+      "followup_delta_weeks": 0.7,
+      "fields": {
+        "iop_pre_mmhg": {
+          "pass": true,
+          "detail": "19.0 (exp 19.0, diff 0.00)",
+          "expected": 19.0,
+          "actual": 19.0
+        },
+        "iop_post_mmhg": {
+          "pass": true,
+          "detail": "18.0 (exp 18.0, diff 0.00)",
+          "expected": 18.0,
+          "actual": 18.0
+        },
+        "eye": {
+          "pass": true,
+          "detail": "OD",
+          "expected": "OD",
+          "actual": "OD"
+        },
+        "diagnosis": {
+          "pass": true,
+          "detail": "POAG (exp POAG)",
+          "expected": "POAG",
+          "actual": "POAG"
+        },
+        "num_meds_pre": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        },
+        "num_meds_post": {
+          "pass": true,
+          "detail": "2 (exp 2)",
+          "expected": 2,
+          "actual": "2"
+        }
+      },
+      "overall_pass": true
+    }
+  ],
+  "missed_records": [
+    {
+      "study_id": "case_report_02",
+      "eye": "OD",
+      "followup_weeks_expected": 24,
+      "reason": "No extracted row with matching study_id + eye within \u00b12 weeks"
+    },
+    {
+      "study_id": "case_report_03",
+      "eye": "OD",
+      "followup_weeks_expected": 52,
+      "reason": "No extracted row with matching study_id + eye within \u00b12 weeks"
+    },
+    {
+      "study_id": "case_report_03",
+      "eye": "OS",
+      "followup_weeks_expected": 52,
+      "reason": "No extracted row with matching study_id + eye within \u00b12 weeks"
+    }
+  ],
+  "recommendations": [
+    "3 ground-truth record(s) had no matching extracted row. Review the extractor's handling of follow-up time-point parsing \u2014 especially month-to-week conversions (some records show ~4-week drift)."
+  ]
+}

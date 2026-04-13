@@ -1,0 +1,62 @@
+[
+  {
+    "patient_id": null,
+    "eye": "OD",
+    "age": 55,
+    "sex": "M",
+    "intervention": "SLT",
+    "iop_pre_mmhg": 26.0,
+    "iop_post_mmhg": 18.0,
+    "followup_weeks": 8.7,
+    "num_meds_pre": 2,
+    "num_meds_post": 1,
+    "diagnosis": "POAG",
+    "notes": "follow-up: 2 months",
+    "source_page": 1
+  },
+  {
+    "patient_id": null,
+    "eye": "OD",
+    "age": 55,
+    "sex": "M",
+    "intervention": "SLT",
+    "iop_pre_mmhg": 26.0,
+    "iop_post_mmhg": 17.0,
+    "followup_weeks": 56.5,
+    "num_meds_pre": 2,
+    "num_meds_post": 1,
+    "diagnosis": "POAG",
+    "notes": "follow-up: 13 months",
+    "source_page": 1
+  },
+  {
+    "patient_id": null,
+    "eye": "OS",
+    "age": 55,
+    "sex": "M",
+    "intervention": "SLT",
+    "iop_pre_mmhg": 24.0,
+    "iop_post_mmhg": 16.0,
+    "followup_weeks": 8.7,
+    "num_meds_pre": 2,
+    "num_meds_post": 1,
+    "diagnosis": "POAG",
+    "notes": "follow-up: 2 months",
+    "source_page": 1
+  },
+  {
+    "patient_id": null,
+    "eye": "OS",
+    "age": 55,
+    "sex": "M",
+    "intervention": "SLT",
+    "iop_pre_mmhg": 24.0,
+    "iop_post_mmhg": 15.0,
+    "followup_weeks": 56.5,
+    "num_meds_pre": 2,
+    "num_meds_post": 1,
+    "diagnosis": "POAG",
+    "notes": "follow-up: 13 months",
+    "source_page": 1
+  }
+]

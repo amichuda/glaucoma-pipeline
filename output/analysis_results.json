@@ -1,0 +1,116 @@
+{
+  "sample_size": {
+    "n_eyes": 16,
+    "n_patients": 15,
+    "n_studies": 8,
+    "n_verified": 16
+  },
+  "descriptive_stats": {
+    "iop_pre_mmhg": {
+      "n": 16,
+      "mean": 26.1875,
+      "sd": 6.91104188961404,
+      "median": 25.0,
+      "q1": 22.0,
+      "q3": 29.5,
+      "iqr": 7.5,
+      "min": 16.0,
+      "max": 38.0
+    },
+    "iop_post_mmhg": {
+      "n": 16,
+      "mean": 19.0625,
+      "sd": 7.2706602176143535,
+      "median": 17.0,
+      "q1": 15.0,
+      "q3": 19.25,
+      "iqr": 4.25,
+      "min": 12.0,
+      "max": 37.0
+    },
+    "iop_change_mmhg": {
+      "n": 16,
+      "mean": -7.125,
+      "sd": 3.89657969677682,
+      "median": -8.0,
+      "q1": -9.0,
+      "q3": -3.75,
+      "iqr": 5.25,
+      "min": -14.0,
+      "max": -1.0
+    },
+    "iop_pct_change": {
+      "n": 16,
+      "mean": -27.658759664612994,
+      "sd": 12.713871830687202,
+      "median": -32.73809523809524,
+      "q1": -35.56149732620321,
+      "q3": -23.4375,
+      "iqr": 12.124,
+      "min": -41.17647058823529,
+      "max": -2.631578947368421
+    }
+  },
+  "normality_test": {
+    "test": "shapiro_wilk",
+    "statistic": 0.9293371925609151,
+    "p_value": 0.23796006871450726,
+    "normal_distribution": true
+  },
+  "inferential_test": {
+    "test": "paired_t_test",
+    "statistic": -7.314106785387883,
+    "p_value": 2.5503558908398243e-06,
+    "significant_p05": true
+  },
+  "effect_size": {
+    "cohens_d_paired": -1.8285266963469708,
+    "interpretation": "large"
+  },
+  "confidence_interval_95": {
+    "mean_change_mmhg": -7.125,
+    "ci_lower": -9.2013407559831,
+    "ci_upper": -5.0486592440169
+  },
+  "clinical_success": {
+    "n_eyes_20pct_reduction": 12,
+    "pct_eyes_20pct_reduction": 75.0,
+    "threshold": ">=20% IOP reduction"
+  },
+  "medication_analysis": {
+    "n": 16,
+    "mean_change": -0.6875,
+    "sd_change": 0.47871355387816905,
+    "median_change": -1.0,
+    "wilcoxon_stat": 0.0,
+    "wilcoxon_p": 0.0009111188771537128,
+    "pre_desc": {
+      "n": 16,
+      "mean": 2.4375,
+      "sd": 0.7274384280931732,
+      "median": 2.0,
+      "q1": 2.0,
+      "q3": 3.0,
+      "iqr": 1.0,
+      "min": 2.0,
+      "max": 4.0
+    },
+    "post_desc": {
+      "n": 16,
+      "mean": 1.75,
+      "sd": 1.0645812948447542,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 2.0,
+      "iqr": 1.0,
+      "min": 1.0,
+      "max": 4.0
+    }
+  },
+  "diagnosis_breakdown": {
+    "POAG": 10,
+    "Pseudoexfoliation glaucoma": 2,
+    "Normal-tension glaucoma": 2,
+    "Pigmentary glaucoma": 2
+  }
+}

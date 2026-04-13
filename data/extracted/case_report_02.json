@@ -1,0 +1,32 @@
+[
+  {
+    "patient_id": null,
+    "eye": "OD",
+    "age": 74,
+    "sex": "M",
+    "intervention": "SLT",
+    "iop_pre_mmhg": 34.0,
+    "iop_post_mmhg": 22.0,
+    "followup_weeks": 6.0,
+    "num_meds_pre": 3,
+    "num_meds_post": 3,
+    "diagnosis": "Pseudoexfoliation glaucoma",
+    "notes": "follow-up: 6 weeks",
+    "source_page": 2
+  },
+  {
+    "patient_id": null,
+    "eye": "OD",
+    "age": 74,
+    "sex": "M",
+    "intervention": "SLT",
+    "iop_pre_mmhg": 34.0,
+    "iop_post_mmhg": 20.0,
+    "followup_weeks": 26.1,
+    "num_meds_pre": 3,
+    "num_meds_post": 2,
+    "diagnosis": "Pseudoexfoliation glaucoma",
+    "notes": "follow-up: 6 months",
+    "source_page": 2
+  }
+]

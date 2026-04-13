@@ -1,0 +1,136 @@
+{
+  "scores": {
+    "statistical_accuracy": 0.82,
+    "clinical_accuracy": 0.85,
+    "structure": 0.88,
+    "clarity": 0.80,
+    "hedging": 0.95,
+    "completeness": 0.72,
+    "internal_consistency": 0.78
+  },
+  "overall_score": 0.829,
+  "pass": false,
+  "pass_criteria": {
+    "required_overall_score": 0.80,
+    "achieved_overall_score": 0.829,
+    "score_threshold_met": true,
+    "major_issues_empty": false,
+    "major_issues_count": 5,
+    "pass": false,
+    "reason": "Overall score 0.829 meets the 0.80 threshold, but pass requires BOTH overall_score >= 0.80 AND major_issues list empty. Five major issues were identified; pass = false."
+  },
+  "major_issues": [
+    {
+      "id": "MAJ-01",
+      "category": "statistical_accuracy",
+      "location": "Section 3.2; Section 3.1; Abstract > Results",
+      "issue": "Sign convention for percentage IOP change is inconsistent throughout the manuscript. Section 3.1 reports 'mean percentage IOP reduction was 27.7%' (unsigned positive). The abstract reports '-27.7%' (signed negative). Section 3.2 reports non-responder reductions as positive values ('2.6% and 5.3%') then in the same paragraph states the range extended from '-2.6% to -41.2%' (signed negative). The dataset records all iop_pct_change values as negative (direction: [post - pre] / pre × 100). A single, clearly defined sign convention must be adopted and applied uniformly throughout all sections. This inconsistency constitutes a factual reporting error that will cause confusion for clinical readers and will be cited by statistical reviewers as requiring mandatory correction."
+    },
+    {
+      "id": "MAJ-02",
+      "category": "statistical_accuracy",
+      "location": "Section 3.3",
+      "issue": "The Wilcoxon signed-rank test result 'W = 0.0, p = 0.0009' is reported without interpretation or contextualisation of the W-statistic. A test statistic of exactly W = 0.0 has specific meaning: every non-tied pair had the same sign direction, meaning every patient who showed any change in medication count showed a decrease. The manuscript does not state how many pairs were tied (zero change in medications) nor explain why W = 0.0 is a remarkable finding. Failure to report the number of tied pairs (which Wilcoxon requires) is a methodological omission that will prompt mandatory revision at any peer-reviewed journal. Based on the CSV: P11 and P12 (pigmentary glaucoma) show num_meds_pre = 4, num_meds_post = 4 — two tied pairs. With two ties excluded from the Wilcoxon, n_effective = 14, and W = 0.0 means all 14 non-tied differences were in the same direction. This must be stated explicitly."
+    },
+    {
+      "id": "MAJ-03",
+      "category": "completeness",
+      "location": "Section 4.5 (Limitations); Conclusion",
+      "issue": "The manuscript explicitly states in the Conclusion that 'Future analyses should deduplicate repeated-visit rows to a single observation per eye, or employ mixed-effects models, before applying inferential statistics,' yet no sensitivity analysis using deduplicated data is presented anywhere in the manuscript. At minimum, a brief sensitivity result using the most recent post-SLT IOP per eye (last-observation-carried-forward, n = 9 unique eyes) should be reported. Recommending a correction without performing it — while still presenting the uncorrected analysis as primary results — is epistemically inconsistent and will be rejected by peer reviewers as an incomplete revision strategy. This is the single most actionable deficiency."
+    },
+    {
+      "id": "MAJ-04",
+      "category": "completeness",
+      "location": "Section 2.1; Section 5 (Conclusion)",
+      "issue": "The manuscript states it was 'prepared with reference to the CARE (CAse REport) guidelines for case series reporting' but provides no individual-level patient data table. The CARE guidelines explicitly require presentation of individual patient data (demographics, interventions, outcomes) for all cases in a case series. This is not optional — a CARE-compliant case series must include a table or figure showing per-patient baseline IOP, post-SLT IOP, percentage change, medications pre/post, diagnosis, and follow-up duration. The manuscript claims CARE compliance but does not meet its requirements."
+    },
+    {
+      "id": "MAJ-05",
+      "category": "clinical_accuracy",
+      "location": "Section 1 (Introduction); Reference list",
+      "issue": "The global glaucoma prevalence statistics — '76 million individuals, with projections exceeding 111 million by 2040' — are attributed to reference [1], which is the LiGHT trial (Gazzard et al. 2019, Lancet). The LiGHT trial does not report global glaucoma prevalence or projections. These figures originate from Tham et al. 2014 (Ophthalmology 121:2081-2090), which is the canonical citation for global glaucoma burden estimates. This is a factual reference attribution error. A clinical ophthalmology reviewer will immediately identify this mismatch and it will raise questions about the rigour of the reference management throughout."
+    }
+  ],
+  "minor_issues": [
+    {
+      "id": "MIN-01",
+      "category": "structure",
+      "location": "Abstract > Methods",
+      "issue": "The abstract Methods section is unusually verbose (4 complex sentences, ~100 words) and includes details — Shapiro-Wilk rationale, Wilcoxon vs. t-test justification — that belong in the Methods body. Standard structured abstracts for clinical ophthalmology journals limit Methods to 2-3 sentences: design, n, intervention, primary endpoint."
+    },
+    {
+      "id": "MIN-02",
+      "category": "clarity",
+      "location": "Sections 2.1, 2.5, Abstract note, Results preamble, Section 4.5",
+      "issue": "The repeated-measures limitation is disclosed at five separate locations with near-identical explanatory text. While the transparency is commendable, this level of repetition fragments the reading experience and signals poor editorial judgment. Clinical journals expect one full treatment (Limitations 4.5) and brief cross-references elsewhere. Five full disclosures exceed editorial norms."
+    },
+    {
+      "id": "MIN-03",
+      "category": "statistical_accuracy",
+      "location": "Section 2.6",
+      "issue": "The manuscript states clinical success (>=20% IOP reduction) is 'consistent with the threshold applied in the AGIS and CIGTS trials.' This is inaccurate: AGIS defined success based on absolute IOP thresholds and a weighted scoring system, not a 20% reduction criterion; CIGTS used stage-dependent target IOPs. The >=20% threshold is widely used in the SLT literature (cite Garg and Gazzard [3] or Realini [10]). The current attribution to AGIS/CIGTS is historically incorrect and will be challenged by any reviewer familiar with these landmark trials."
+    },
+    {
+      "id": "MIN-04",
+      "category": "clinical_accuracy",
+      "location": "Section 4.3; Reference [7]",
+      "issue": "Reference [7] (Alvarado et al. 2009, Am J Ophthalmol) is cited to support the statement that SLT activates macrophages in the trabecular meshwork. The Alvarado 2009 paper focuses on juxtacanalicular tissue anatomy and aqueous outflow pathways — it does not describe SLT's macrophage-activation mechanism. The canonical references for this mechanism are Latina and Park 1995 (Curr Opin Ophthalmol) and Latina et al. 1998 [11]. Reference [7] appears misfiled and does not support the cited claim."
+    },
+    {
+      "id": "MIN-05",
+      "category": "structure",
+      "location": "Section 4.3",
+      "issue": "The Mechanism of Action subsection (4.3) reads as background material more appropriate for the Introduction than the Discussion. Standard case series Discussion sections compare findings to the literature, explain unexpected results, and address limitations — not re-introduce mechanism. This subsection duplicates content implicit in the Introduction and disrupts Discussion flow. Consider moving or integrating into the Introduction."
+    },
+    {
+      "id": "MIN-06",
+      "category": "clinical_accuracy",
+      "location": "Section 4.2",
+      "issue": "The discussion speculates that dense trabecular pigmentation may 'paradoxically disrupt normal laser-tissue interaction' in pigmentary glaucoma, but no citation supports this specific hypothesis. The draft labels this 'speculative and hypothesis-generating,' which is appropriate, but should include at least one relevant citation pointing to the limited evidence base for SLT in pigmentary glaucoma (Realini 2008 [10] partially addresses this). Without a citation, the speculation reads as unanchored conjecture."
+    },
+    {
+      "id": "MIN-07",
+      "category": "completeness",
+      "location": "Throughout",
+      "issue": "Author name(s), institution, and correspondence fields remain as placeholder text. While expected at draft stage, this is flagged because the manuscript would be immediately desk-rejected in current form. Must be resolved before any journal submission."
+    },
+    {
+      "id": "MIN-08",
+      "category": "statistical_accuracy",
+      "location": "Section 3.1",
+      "issue": "The manuscript reports the 95% CI as '-9.2 to -5.0 mmHg.' The analysis_results.json gives ci_lower = -9.2013 and ci_upper = -5.0487. The upper bound -5.0487 rounds to -5.0 (to 1 decimal place), which is what is reported. This is arithmetically correct. However, the lower bound -9.2013 rounds to -9.2, which is also what is reported. No error here, but for consistency with reporting at 1 decimal place throughout, the values should be explicitly stated as '-9.2 to -5.0 mmHg (1 d.p.)' or the CI should be reported at 2 d.p. as '-9.20 to -5.05 mmHg' to show appropriate precision. As written, '-5.0' looks like an exact value rather than a rounded bound."
+    }
+  ],
+  "detailed_critique": {
+    "statistical_accuracy": {
+      "score": 0.82,
+      "narrative": "All primary statistics were verified against analysis_results.json. Rounded values are arithmetically correct in virtually every case: IOP pre mean 26.1875 -> 26.2, SD 6.911 -> 6.9, post mean 19.0625 -> 19.1, SD 7.271 -> 7.3, absolute change -7.125 -> -7.1, t-statistic -7.314 -> -7.31, p = 2.55e-6 (correct), Cohen's d -1.8285 -> -1.83, Shapiro-Wilk W 0.9293 -> 0.93 / p 0.238 -> 0.24, clinical success 12/16 = 75.0%, medication mean change -0.6875 -> -0.69, SD 0.4787 -> 0.48, Wilcoxon W = 0.0 / p 0.000911 -> 0.0009, IOP pct change mean -27.659 -> 27.7%, median -32.738 -> 32.7%, IQR reported as 23.4%-35.6% (Q1 = -35.56, Q3 = -23.44 in absolute terms, correctly transposed). Critical problems: (1) sign convention for percentage IOP change is inconsistent across sections, constituting a factual reporting error (MAJ-01); (2) Wilcoxon tied pairs not reported, W = 0.0 not interpreted (MAJ-02); (3) 20% threshold misattributed to AGIS/CIGTS (MIN-03)."
+    },
+    "clinical_accuracy": {
+      "score": 0.85,
+      "narrative": "SLT mechanism description is clinically accurate. LiGHT trial (74% at 3 years without medications) cited correctly. Pigmentary glaucoma pathophysiology (posterior iris bowing, iridozonular friction, melanin granule deposition) is accurate. Benchmark comparisons to published meta-analyses (5-8 mmHg reduction, 60-85% responder rate) are reasonable and consistent with the literature. NTG baseline IOP of 16.0 mmHg correctly noted as consistent with diagnostic criteria. Three clinical accuracy problems reduce the score: (1) global prevalence statistics wrongly attributed to LiGHT trial instead of Tham et al. 2014 (MAJ-05); (2) Alvarado 2009 citation does not support the mechanistic claim made (MIN-04); (3) 20% threshold incorrectly attributed to AGIS/CIGTS methodology (MIN-03)."
+    },
+    "structure": {
+      "score": 0.88,
+      "narrative": "The IMRaD structure is followed correctly with all required sections present. The Limitations subsection (4.5) is exceptionally thorough with seven distinct limitations identified and discussed. The Mechanism of Action subsection (4.3) is misplaced — it belongs in the Introduction, not the Discussion. The abstract is correctly formatted as a structured abstract but the Methods paragraph is overlong. References are numbered in citation order. COI and Funding declarations are present."
+    },
+    "clarity": {
+      "score": 0.80,
+      "narrative": "Writing is generally precise and uses appropriate terminology. The main clarity failure is the sign-convention inconsistency for percentage IOP change (positive 'reduction' vs. signed negative values in different sections; MAJ-01), which will confuse any reader who reads the manuscript sequentially. The repeated-measures limitation is over-disclosed at five locations (MIN-02), fragmenting reading flow. The Wilcoxon W = 0.0 statistic is presented without explanation, leaving readers uncertain whether this reflects an error or a genuine test result (MAJ-02). These issues collectively impose a meaningful clarity penalty."
+    },
+    "hedging": {
+      "score": 0.95,
+      "narrative": "Hedging is this manuscript's strongest dimension. The repeated-measures limitation is prominently flagged multiple times. All inferential statistics are appropriately characterised as 'approximate exploratory results.' The conclusion explicitly states the series does not establish causal efficacy. Speculative mechanistic claims in Section 4.2 are labelled as such. Absence of adverse events is not claimed to equal confirmed safety. This level of epistemic rigour is uncommon in case series reporting and represents genuine scientific integrity."
+    },
+    "completeness": {
+      "score": 0.72,
+      "narrative": "Two major completeness gaps were identified. First, the manuscript claims CARE guideline compliance but lacks the per-patient individual-level data table that CARE explicitly requires for case series (MAJ-04). Second, the manuscript recommends in its own Conclusion that the analysis should be repeated with deduplicated data, but does not provide this sensitivity analysis anywhere (MAJ-03). A manuscript that identifies its own primary flaw and recommends a specific correction but does not perform that correction is incomplete by definition. These two omissions together reduce the completeness score substantially despite the thoroughness of the Limitations section."
+    },
+    "internal_consistency": {
+      "score": 0.78,
+      "narrative": "Statistics are largely consistent across Abstract, Methods, Results, and Conclusion. However, three internal consistency problems were found: (1) percentage IOP change sign convention differs between abstract ('-27.7%'), Section 3.1 ('27.7%'), and Section 3.2 (mixed usage; MAJ-01); (2) the manuscript states it follows CARE guidelines but does not meet CARE's individual data table requirement (MAJ-04); (3) the Conclusion recommends a sensitivity analysis that is not performed anywhere in the manuscript (MAJ-03). The '15 distinct patient identifiers' claim in Section 2.2 is defensible when counting unique patient_id strings (P1-P12 = 12 strings plus PN-4821, PN-3317, PN-6094 = 3 strings, total 15), but note that PN-3317 appears in two rows for the same patient — this requires explicit clarification rather than leaving it implicit."
+    }
+  },
+  "reviewer_summary": "This aggregated case series draft demonstrates commendable statistical transparency and epistemic rigor — the hedging is genuinely exemplary for a case series, and nearly all statistics are correctly transcribed from the analysis pipeline. However, five major issues preclude a passing review. The most critical are: (1) the failure to present a sensitivity analysis with deduplicated data despite explicitly recommending one in the Conclusion — this is a self-identified deficiency that a reviewer will demand be remedied; (2) the lack of an individual-level patient data table required by the CARE guidelines the manuscript claims to follow; (3) a consistent sign-convention error for percentage IOP change that will confuse clinical readers across multiple sections; (4) the Wilcoxon W = 0.0 statistic reported without tied-pair count or interpretation; and (5) a factual reference attribution error assigning global prevalence figures to the LiGHT trial. The overall score of 0.829 meets the numeric threshold (>= 0.80) but the presence of five major issues prevents a passing grade. Targeted revisions to MAJ-01 through MAJ-05 are required for the next draft cycle."
+}
+

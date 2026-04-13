@@ -1,0 +1,17 @@
+[
+  {
+    "patient_id": "PN-6094",
+    "eye": "OD",
+    "age": 66,
+    "sex": "F",
+    "intervention": "SLT",
+    "iop_pre_mmhg": 19.0,
+    "iop_post_mmhg": 18.0,
+    "followup_weeks": 8.7,
+    "num_meds_pre": 2,
+    "num_meds_post": 2,
+    "diagnosis": "POAG",
+    "notes": "follow-up: 2-Month Post-SLT",
+    "source_page": 1
+  }
+]

@@ -1,0 +1,17 @@
+[project]
+name = "glaucoma-pipeline"
+version = "0.1.0"
+description = "Multi-agent pipeline for biostatistical evaluation of glaucoma interventions from PDF case reports"
+requires-python = ">=3.11"
+dependencies = [
+    "fpdf2",
+    "pymupdf",
+    "pandas",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "pingouin",
+    "marimo",
+    "numpy",
+    "openpyxl",
+]

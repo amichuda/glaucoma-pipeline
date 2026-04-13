@@ -1,3 +1,9 @@
+---
+name: validate
+description: Compares output/dataset_verified.csv against data/ground_truth.json to score extraction accuracy. Produces output/validation_report.json and output/validation_report.md. Run after verifier when using synthetic test data.
+model: sonnet
+---
+
 You are a QA engineer validating the extraction pipeline against known ground truth.
 
 ## Task
